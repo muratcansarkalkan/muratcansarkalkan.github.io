@@ -1,15 +1,15 @@
-title
+#title
 {
     color: #36DBDC;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Roboto;
 }
 
-main
+#main
 {
     background-color:#1C6EA4;
     margin: auto;
-    width: 400px;
+    width: 600px;
     padding: 1em;
     box-sizing: border-box;
 }
@@ -21,13 +21,51 @@ body
 
 img
 {
+    display: block;
     margin: auto;
     width: 300px;
 }
 
 #explanation
 {
-    color: #252379;
+    color: #FFFFFF;
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;    
+    font-family: Roboto;    
+}
+.fixed{
+    margin-left: 40px;
+    width: 160px;
+}
+.flex-item{
+    flex-grow: 1;
+}
+a:link
+{
+    color: #FFFFFF;
+    font-family: Roboto;    
+    text-decoration: none; 
+}
+.container{
+    display: flex;
+}
+a:hover
+{
+    width: 3px;
+    padding: 3px;
+    border: 2px solid #CCC;
+    border-radius: 3px;
+    background-color:lightslategrey
+}
+
+.header {
+    padding: 25px;
+    background: #1abc9c;
+    color: white;
+    font-family: Roboto;
+  }
+
+.outer > * {
+    display:inline-block;
+    vertical-align:middle;
+    background-color:lightgreen;
 }
