@@ -51,7 +51,7 @@ img
     width: 140px;
 }
 .flex-item{
-    flex-grow: 1;
+    flex-grow: 0.03;
 }
 
 .explanation a:link
@@ -98,17 +98,20 @@ img
 }
 .container a:link
 {
-    width: 3px;
-    padding: 3px;
+    width: 5px;
+    padding: 5px;
     color: #DCDCDC;
+    border: 2px solid #0B0B45FF;
+    border-radius: 3px;
     background-color: #0B0B45FF;
     text-decoration: none;
     font-family: Roboto;
+    background-color: transparent;
 }
 .container a:hover
 {
-    width: 3px;
-    padding: 3px;
+    width: 5px;
+    padding: 5px;
     border: 2px solid #CCC;
     border-radius: 3px;
     background-color: #2B2B45FF;
@@ -118,17 +121,20 @@ img
 }
 .container a:visited
 {
-    width: 3px;
-    padding: 3px;
-    background-color: #0B0B45FF;
+    width: 5px;
+    padding: 5px;
     color: #DCDCDC;
+    border: 2px solid #0B0B45FF;
+    border-radius: 3px;
+    background-color: #0B0B45FF;
     text-decoration: none;
     font-family: Roboto;
+    background-color: transparent;
 }
 .container a:visited:hover
 {
     width: 3px;
-    padding: 3px;
+    padding: 5px;
     border: 2px solid #CCC;
     border-radius: 3px;
     background-color: #2B2B45FF;
