@@ -1,22 +1,36 @@
+@keyframes header {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+@keyframes title {
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+@keyframes body{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
 #title
 {
-    color: #36DBDC;
+    color: #0B0B45;
     text-align: center;
     font-family: Roboto;
 }
 
 #main
 {
-    background-color:#1C6EA4;
+    background-color:#E0E0E0;
     margin: auto;
-    width: 600px;
+    width: 700px;
     padding: 1em;
     box-sizing: border-box;
 }
   
 body
 {
-    background-color: #fcb714;
+    background-color: #F0F0F0;
+    animation-name: body;
+    animation-duration: 2s;
 }
 
 img
@@ -26,44 +40,110 @@ img
     width: 300px;
 }
 
-#explanation
+.explanation
 {
-    color: #FFFFFF;
+    color: #0B0B45;
     text-align: center;
-    font-family: Roboto;    
+    font-family: Roboto;   
 }
 .fixed{
-    margin-left: 40px;
-    width: 160px;
+    margin-left: 15px;
+    width: 140px;
 }
 .flex-item{
     flex-grow: 1;
 }
-a:link
+
+.explanation a:link
 {
-    color: #FFFFFF;
-    font-family: Roboto;    
-    text-decoration: none; 
+    width: 3px;
+    padding: 3px;
+    color: #0B0B45;
+    text-decoration: none;
+    font-family: Roboto;
+}
+
+.explanation a:hover
+{
+    width: 3px;
+    padding: 3px;
+    border: 2px solid #0B0B45;
+    border-radius: 3px;
+    background-color:lightgrey;
+    color: #0B0B45;
+    text-decoration: none;
+    font-family: Roboto;
+}
+.explanation a:visited
+{
+    width: 3px;
+    padding: 3px;
+    color: #0B0B45;
+    text-decoration: none;
+    font-family: Roboto;
+}
+.explanation a:visited:hover
+{
+    width: 3px;
+    padding: 3px;
+    border: 2px solid #0B0B45;
+    border-radius: 3px;
+    background-color:lightgrey;
+    color: #0B0B45;
+    text-decoration: none;
+    font-family: Roboto;
 }
 .container{
     display: flex;
 }
-a:hover
+.container a:link
+{
+    width: 3px;
+    padding: 3px;
+    color: #DCDCDC;
+    background-color: #0B0B45FF;
+    text-decoration: none;
+    font-family: Roboto;
+}
+.container a:hover
 {
     width: 3px;
     padding: 3px;
     border: 2px solid #CCC;
     border-radius: 3px;
-    background-color:lightslategrey
+    background-color: #2B2B45FF;
+    text-decoration: none;
+    color: #DCDCDC;
+    font-family: Roboto;
 }
-
+.container a:visited
+{
+    width: 3px;
+    padding: 3px;
+    background-color: #0B0B45FF;
+    color: #DCDCDC;
+    text-decoration: none;
+    font-family: Roboto;
+}
+.container a:visited:hover
+{
+    width: 3px;
+    padding: 3px;
+    border: 2px solid #CCC;
+    border-radius: 3px;
+    background-color: #2B2B45FF;
+    text-decoration: none;
+    color: #DCDCDC;
+    font-family: Roboto;
+}
 .header {
     padding: 25px;
-    background: #1abc9c;
+    background: #0B0B45;
     color: white;
     font-family: Roboto;
+    animation-name: header;
+    animation-duration: 2s;
   }
-
 .outer > * {
     display:inline-block;
     vertical-align:middle;
