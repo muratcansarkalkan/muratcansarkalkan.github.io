@@ -10,11 +10,18 @@
     from {opacity: 0;}
     to {opacity: 1;}
   }
+
+  @keyframes hov{
+    from {opacity: 0;}
+    to {opacity: 1;}
+  }
+@import url(//fonts.googleapis.com/css?family=Poppins);
+
 #title
 {
     color: #0B0B45;
     text-align: center;
-    font-family: Roboto;
+    font-family: 'Poppins';
 }
 
 #main
@@ -23,14 +30,16 @@
     margin: auto;
     width: 700px;
     padding: 1em;
+    border-radius: 20px;
     box-sizing: border-box;
+    box-shadow: 0px 10px 5px grey;
 }
   
 body
 {
     background-color: #F0F0F0;
     animation-name: body;
-    animation-duration: 2s;
+    animation-duration: 1s;
 }
 
 img
@@ -44,7 +53,7 @@ img
 {
     color: #0B0B45;
     text-align: center;
-    font-family: Roboto;   
+    font-family: 'Poppins';   
 }
 .fixed{
     margin-left: 15px;
@@ -60,7 +69,7 @@ img
     padding: 3px;
     color: #0B0B45;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Poppins';
 }
 
 .explanation a:hover
@@ -72,7 +81,9 @@ img
     background-color:lightgrey;
     color: #0B0B45;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Poppins';
+    animation-name: hov;
+    animation-duration: 0.2s;
 }
 .explanation a:visited
 {
@@ -80,7 +91,7 @@ img
     padding: 3px;
     color: #0B0B45;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Poppins';
 }
 .explanation a:visited:hover
 {
@@ -91,7 +102,9 @@ img
     background-color:lightgrey;
     color: #0B0B45;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Poppins';
+    animation-name: hov;
+    animation-duration: 0.2s;
 }
 .container{
     display: flex;
@@ -103,9 +116,8 @@ img
     color: #DCDCDC;
     border: 2px solid #0B0B45FF;
     border-radius: 3px;
-    background-color: #0B0B45FF;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Poppins';
     background-color: transparent;
 }
 .container a:hover
@@ -114,10 +126,12 @@ img
     padding: 5px;
     border: 2px solid #CCC;
     border-radius: 3px;
-    background-color: #2B2B45FF;
+    background-color: lightgrey;
     text-decoration: none;
-    color: #DCDCDC;
-    font-family: Roboto;
+    color: #0B0B45;
+    font-family: 'Poppins';
+    animation-name: hov;
+    animation-duration: 0.2s;
 }
 .container a:visited
 {
@@ -126,9 +140,8 @@ img
     color: #DCDCDC;
     border: 2px solid #0B0B45FF;
     border-radius: 3px;
-    background-color: #0B0B45FF;
     text-decoration: none;
-    font-family: Roboto;
+    font-family: 'Poppins';
     background-color: transparent;
 }
 .container a:visited:hover
@@ -137,16 +150,18 @@ img
     padding: 5px;
     border: 2px solid #CCC;
     border-radius: 3px;
-    background-color: #2B2B45FF;
+    background-color: lightgrey;
     text-decoration: none;
-    color: #DCDCDC;
-    font-family: Roboto;
+    color: #0B0B45;
+    font-family: 'Poppins';
+    animation-name: hov;
+    animation-duration: 0.2s;
 }
 .header {
     padding: 25px;
     background: #0B0B45;
     color: white;
-    font-family: Roboto;
+    font-family: 'Poppins';
     animation-name: header;
     animation-duration: 2s;
   }
@@ -154,4 +169,10 @@ img
     display:inline-block;
     vertical-align:middle;
     background-color:lightgreen;
+}
+
+.git{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
