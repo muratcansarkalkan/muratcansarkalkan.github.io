@@ -22,6 +22,7 @@
     color: #0B0B45;
     text-align: center;
     font-family: 'Poppins';
+    text-transform: uppercase;
 }
 
 #main
@@ -48,21 +49,16 @@ img
     margin: auto;
     width: 300px;
 }
-
 .explanation
 {
     color: #0B0B45;
     text-align: center;
     font-family: 'Poppins';   
 }
-.fixed{
-    margin-left: 15px;
-    width: 140px;
-}
+
 .flex-item{
     flex-grow: 0.03;
 }
-
 .explanation a:link
 {
     width: 3px;
@@ -109,9 +105,27 @@ img
 .container{
     display: flex;
 }
+
+#navbar {
+    background-color:#0B0B45;
+    border-radius: 0px 0px 8px 8px;
+    transform: translateY(calc(-100% + 10px));
+    transition: transform .4s cubic-bezier(.4, 0, .2, 1) .2s;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+.header:hover #navbar {
+transform: translateY(0);
+transition-delay: 0s;
+}
+#navbar {
+    position: relative;
+  }
+  
 .container a:link
 {
-    width: 5px;
     padding: 5px;
     color: #DCDCDC;
     border: 2px solid #0B0B45FF;
@@ -122,7 +136,6 @@ img
 }
 .container a:hover
 {
-    width: 5px;
     padding: 5px;
     border: 2px solid #CCC;
     border-radius: 3px;
@@ -135,7 +148,6 @@ img
 }
 .container a:visited
 {
-    width: 5px;
     padding: 5px;
     color: #DCDCDC;
     border: 2px solid #0B0B45FF;
@@ -146,7 +158,6 @@ img
 }
 .container a:visited:hover
 {
-    width: 3px;
     padding: 5px;
     border: 2px solid #CCC;
     border-radius: 3px;
@@ -158,13 +169,12 @@ img
     animation-duration: 0.2s;
 }
 .header {
-    padding: 25px;
-    background: #0B0B45;
-    color: white;
-    font-family: 'Poppins';
-    animation-name: header;
-    animation-duration: 2s;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    margin-top: -10px;
   }
+  
 .outer > * {
     display:inline-block;
     vertical-align:middle;
